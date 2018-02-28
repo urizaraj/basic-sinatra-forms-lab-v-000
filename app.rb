@@ -6,6 +6,15 @@ class App < Sinatra::Base
   end
 
   post '/team' do
+    @full = {
+      name: 'Team Name',
+      coach: 'Coach',
+      pg: 'Point Guard',
+      sg: 'Shooting Guard',
+      sf: 'Small Forward',
+      pf: 'Power Forward',
+      c: 'Center'
+    }
     erb :team
   end
 
