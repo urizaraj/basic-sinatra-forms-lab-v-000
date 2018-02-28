@@ -6,7 +6,7 @@
  </head>
  <body>
    <% params.each do |key, value| %>
-    <h2> <%= "#{@full[key]}: #{value}" %> </h2>
+    <h2> <%= "#{@full[key.to_sym]}: #{value}" %> </h2>
     <% end %>
  </body>
 </html>
